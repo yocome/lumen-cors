@@ -1,0 +1,27 @@
+{
+  "name": "yocome/lumen-cors",
+  "description": "cors for Lumen ",
+  "keywords": ["lumen","cors"],
+  "homepage": "https://github.com/yocome/lumen-cors",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4"
+
+  },
+  "require-dev": {
+    "illuminate/http": "5.2.*",
+    "illuminate/support": "5.2.*"
+  },
+  "authors": [
+    {
+      "name": "Yong",
+      "email": "yocome@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Yocome\\Cors\\": "src/"
+    }
+  }
+}

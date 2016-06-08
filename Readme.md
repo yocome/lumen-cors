@@ -61,7 +61,7 @@
       'maxAge' => 86400
   ];
   ```
-  > 注：直接复制 `cp cors.config.php  <root_path>/config/cors.php`
+  > 注：可直接复制 `cp cors.config.php  <root_path>/config/cors.php`
 
 2. 修改 `bootstrap/app.php` 文件
 
@@ -70,12 +70,12 @@
     $app->configure('cors');
 
     $app->withFacades();
-    //....
+    ....
 
     //注册中间件
      $app->middleware([
          Yocome\Cors\CorsMiddleware::class,
-         //...
+         ...
      ]);
 
     //注册服务
@@ -84,5 +84,7 @@
    ```
 
 > 参考
+ - https://github.com/nordsoftware/lumen-cors
  - https://github.com/barryvdh/laravel-cors
  - https://github.com/asm89/stack-cors
+

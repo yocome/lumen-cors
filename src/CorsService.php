@@ -54,6 +54,9 @@ class CorsService {
      */
     public function __construct(array $config = [])
     {
+        if(empty($config)){
+            throw new \Exception ("Don't register CorsServiceProvider! please add '\$app->register(Yocome\\Cors\\CorsServiceProvider::class)' to bootstrap/app.php");
+        }
         $this->configure($config);
     }
 
